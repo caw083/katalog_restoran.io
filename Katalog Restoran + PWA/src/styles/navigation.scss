@@ -1,0 +1,118 @@
+:root {
+    --footer-nav-foot-color: #A7E6FF; /* Define variable */
+}
+
+
+.menumob {
+	background-color: var(--footer-nav-foot-color);
+	color: white !important;
+	margin: auto;
+	width: 100%;
+	display: flex;
+	font-weight: 600;
+	height: 60px;
+	font-size: 30px;
+	padding: 10px;
+	justify-content: space-between;
+	.iconmenu a {
+		text-decoration: none;
+		color: white !important
+	}
+}
+
+
+.navmob {
+	background-color: var(--footer-nav-foot-color);
+	width: 100%;
+	display: flex;
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: uppercase;
+
+	.navlistmob {
+		width: 60%;
+		padding: 0;
+		margin: 0;
+		text-align: left;
+
+		.navlistmob {
+			width: 60%;
+			padding: 0;
+			margin: 0;
+			text-align: left;
+
+			.navitemsmob {
+				box-sizing: border-box;
+				display: inline-block;
+				text-align: right;
+				line-height: 24px;
+				text-transform: uppercase;
+				color: white !important
+			}
+		}
+
+		
+	}
+}
+
+
+@media screen and (min-width: 499px) {
+	.navmob {
+		z-index: 10;
+		background-color: #fff;
+		width: 100%;
+		position: absolute;
+		transform: translate(-100%, 0);
+		transition: transform 0.3s ease;
+	}
+	.open {
+		transform: translate(0, 0);
+	}
+	.navitemsmob {
+		display: list-item;
+		color: black!important;
+		width: 100%;
+		text-align: left;
+	}
+}
+.desktop_nav_items {
+	display: inline-block;
+}
+
+@media screen and (min-width: 600px) {
+    .iconmenu {
+        display: none;
+    }
+    .desktop_nav {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .iconmenu {
+        display: block;
+    }
+    .desktop_nav {
+        display: none;
+    }
+}
+@media screen and (min-width: 0px) {
+	.navmob {
+		z-index: 10;
+		background-color: #fff;
+		width: 100%;
+		position: absolute;
+		transform: translate(-100%, 0);
+		transition: transform 0.3s ease;
+	}
+	.open {
+		transform: translate(0, 0);
+	}
+	.navitemsmob {
+		display: list-item;
+		color: black!important;
+		width: 100%;
+		text-align: left;
+	}
+}
