@@ -1,0 +1,28 @@
+GET https://restaurant-api.dicoding.dev/list
+
+########
+GET https://restaurant-api.dicoding.dev/detail/rqdv5juczeskfw1e867
+
+######
+GET https://restaurant-api.dicoding.dev/search?nama=Melting Pot
+
+#####
+GET https://restaurant-api.dicoding.dev/search?kategori=Italia
+
+####
+GET https://restaurant-api.dicoding.dev/search?menu=Es Krim
+
+
+#########
+ 
+POST https://restaurant-api.dicoding.dev/review 
+Content-Type: application/json
+
+{
+    "id": "s1knt6za9kkfw1e867",
+    "name": "Akase Punyaku Selamanya",
+    "review": "Topbher"
+}
+
+##########
+GET https://restaurant-api.dicoding.dev/images/small/14
