@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Restaurant Apps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      a {
+        display: inline-block;
+        min-width: 44px !important;
+        min-height: 44px !important;
+      }
+      button {
+        display: inline-block;
+        min-width: 44px !important; 
+        min-height: 44px !important;
+      }
+      input {
+        display: inline-block;
+        min-width: 44px !important; 
+        min-height: 44px !important;
+      }
+    </style>
+      <link rel="manifest" href="/manifest.json">
+  </head>
+  <body>
+    <header>
+      <a href="#content" tabindex="0" class="skiped">Skip to content ?</a>
+      <div class="menumob">
+          <div class="iconmenu" id="menu"><a href="#">&#9776;</a></div>
+          <div>Foodku Apps</div>
+          <div >&nbsp;</div>
+          <div class="desktop_nav">
+            <ul class="desktop_nav_list">
+              <li class="desktop_nav_items"><a href="">Home</a></li>
+              <li class="desktop_nav_items"><a href="#/favorit/">Favorite</a></li>
+              <li class="desktop_nav_items"><a target="_blank" href="https://github.com/caw083">About Us</a></li>
+          </ul>
+          </div>
+      </div>
+      <nav id="drawer" class="navmob">
+          <ul class="navlistmob">
+              <li class="navitemsmob"><a href="">Home</a></li>
+              <li class="navitemsmob"><a href="#/favorit/">Favorite</a></li>
+              <li class="navitemsmob"><a target="_blank" href="https://github.com/caw083">About Us</a></li>
+          </ul>
+      </nav>
+      </header>
+      <!-- Content -->
+      <main id="content" tabindex="0">
+        <div class="hero">
+            <div class="heroinner">
+                <h1 class="herotitle">Foodku</h1>
+                <p class="herosubtitle">Ayuk makan</p>
+            </div>
+        </div>
+          <section class="content">
+              <div class="latest">
+                  <h1>Find Restaurant</h1>
+                  <div class="list" id="cardlist"></div>
+              </div>
+          </section>
+      </main>
+
+       <!-- Footer -->
+      <!-- <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+  
+        </ul>
+        <p>Copyright © 2023 - Foodku Apps</p>      </footer>  -->
+
+      
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script>
+        const skipLinkElem = document.querySelector('.skiped');
+          skipLinkElem.addEventListener('click', (event) => {
+            event.preventDefault();
+            document.querySelector('#content').focus();
+          });
+      </script>
+  </body>
+</html>
