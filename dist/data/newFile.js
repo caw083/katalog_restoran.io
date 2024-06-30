@@ -1,0 +1,1 @@
+import{registerRoute}from"workbox-routing";import{StaleWhileRevalidate}from"workbox-strategies";import{CacheableResponsePlugin}from"workbox-cacheable-response";registerRoute((({url:e})=>"https://restaurant-api.dicoding.dev"===e.origin),new StaleWhileRevalidate({cacheName:"api-cache",plugins:[new CacheableResponsePlugin({statuses:[0,200]})]}));
